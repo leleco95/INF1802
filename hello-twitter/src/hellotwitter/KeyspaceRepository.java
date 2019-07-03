@@ -1,4 +1,4 @@
-package com.example.hellotwitter;
+package hellotwitter;
 
 import com.datastax.driver.core.Session;
 

@@ -6,7 +6,6 @@
 */.settings/
  
 # Intellij
-*/.idea/
 *.iws
  
 # Mac

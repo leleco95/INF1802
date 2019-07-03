@@ -1,4 +1,4 @@
-package com.example.hellotwitter;
+package hellotwitter;
 
 import com.datastax.driver.core.*;
 import com.datastax.driver.core.utils.UUIDs;
@@ -49,7 +49,7 @@ public class HelloTweet {
             contributorsList.add((long) 33474);
             System.out.println("Insert tweets");
             Tweet tweet = new Tweet(UUIDs.timeBased(), "User 1", "Wow, Cassandra is amazing!", LocalDate.fromYearMonthDay(2019, 6, 25), "Some source", false, -33, -21.673356, true, contributorsList);
-            Tweet tweet2 = new Tweet(UUIDs.timeBased(), "User 2", "Look at what I can do with Cassandra and Java!", LocalDate.fromYearMonthDay(2019, 6, 24), "A crazy source", false, -3.235, 15, true, null);
+            Tweet tweet2 = new Tweet(UUIDs.timeBased(), "User 1", "Look at what I can do with Cassandra and Java!", LocalDate.fromYearMonthDay(2019, 6, 24), "A crazy source", false, -3.235, 15, true, null);
             Tweet tweet3 = new Tweet(UUIDs.timeBased(), "User 3", "This is really impressive.", LocalDate.fromYearMonthDay(2019, 5, 25), "This source is amazing", false, -33.21256, -26.34356, false, null);
             Tweet tweet4 = new Tweet(UUIDs.timeBased(), "User 4", "I cant wait to learn more! I am so exc", LocalDate.fromYearMonthDay(2019, 8, 25), "Sent from Android", true, -20.233467, -12.378337, false, null);
             Tweet tweet5 = new Tweet(UUIDs.timeBased(), "User 5", "See you next time.", LocalDate.fromYearMonthDay(2020, 6, 25), "Somewhere over the rainbow", false, 0, 0, true, null);

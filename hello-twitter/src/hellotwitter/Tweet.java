@@ -1,4 +1,4 @@
-package com.example.hellotwitter;
+package hellotwitter;
 
 import java.util.List;
 import java.util.UUID;
@@ -11,7 +11,7 @@ public class Tweet {
     private LocalDate date;
     private String source;
     private boolean truncated;
-//    private GeoLocation geoLocation;
+    //    private GeoLocation geoLocation;
     private double latitude;
     private double longitude;
     private boolean favorited;
@@ -38,7 +38,7 @@ public class Tweet {
     public LocalDate getDate() { return date; }
     public String getSource() { return source; }
     public boolean isTruncated() { return truncated; }
-//    public GeoLocation getGeoLocation() { return geoLocation; }
+    //    public GeoLocation getGeoLocation() { return geoLocation; }
     public double getLatitude() { return latitude; }
     public double getLongitude() { return longitude; }
     public boolean isFavorited() { return favorited; }
@@ -50,7 +50,7 @@ public class Tweet {
     public void setDate(LocalDate date) { this.date = date; }
     public void setSource(String source) { this.source = source; }
     public void setTruncated(boolean truncated) { this.truncated = truncated; }
-//    public void setGeoLocation(GeoLocation geoLocation) { this.geoLocation = geoLocation; }
+    //    public void setGeoLocation(GeoLocation geoLocation) { this.geoLocation = geoLocation; }
     public void setLatitude(double latitude) { this.latitude = latitude; }
     public void setLongitude(double longitude) { this.longitude = longitude; }
     public void setFavorited(boolean favorited) { this.favorited = favorited; }

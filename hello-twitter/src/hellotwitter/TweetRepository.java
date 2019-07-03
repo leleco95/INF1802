@@ -1,4 +1,4 @@
-package com.example.hellotwitter;
+package hellotwitter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,7 +42,7 @@ public class TweetRepository {
         // pode ser alterado.
         // Outra opção de primary key é a data, se o objetivo for buscar por datas.
         // Acredito que as outras informações não são muito úteis para particionar,
-        // a menos que fosse utilizada a informação de "Place" (dependendo de como fosse).
+        // a menos que fosse utilizada a informação de "Place" (dependendo de como fosse fornecido).
         System.out.println("createTableTweetsByUser ---- init");
         StringBuilder sb = new StringBuilder("CREATE TABLE IF NOT EXISTS ")
                 .append(TABLE_BY_USER_NAME).append("(")
@@ -56,7 +56,7 @@ public class TweetRepository {
                 .append("longitude double,")
                 .append("favorited Boolean,")
                 .append("contributors list<bigint>,")
-                .append("PRIMARY KEY (user));");
+                .append("PRIMARY KEY (user, id));");
 
         final String query = sb.toString();
         System.out.println(query);
